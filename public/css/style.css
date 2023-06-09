@@ -1,0 +1,369 @@
+/* Reset default styles for some elements */
+nav {
+    background-color: #C4DFDF;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    margin: 0;
+    background-color: #F8F6F4;
+}
+.date-container{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 42px;
+    color: #C4DFDF;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+}
+p, label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+nav .brand-logo {
+    font-size: 36px;
+    padding-left: 20px;
+}
+nav .brand-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard {
+    position: relative;
+    height: 30rem;
+}
+
+.dashboard::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/dashboard-background.jpg");
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.dashboard h1 {
+    position: relative;
+}
+
+.dashboard h2 {
+    color: black;
+    position: relative;
+}
+
+#top-login{
+/* font-size: 1.4rem; */
+margin-top: 30px;
+}
+
+.signup div,
+.login div {
+    margin: 0 auto;
+    text-align: center;
+    width: 35vw;
+}
+.signup div form,
+.login div form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+.signup div form .form-group,
+.login div form .form-group {
+    width: 100%;
+    margin: 3px 0;
+}
+.signup div form .suBtn,
+.login div form .lBtn {
+    width: 40%;
+    margin: 7px auto;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+  }
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #E3F4F4;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+input[type=radio] {
+    display: none;
+}
+
+.moodBtn:hover {
+  cursor: pointer;
+  transition: .25s;
+  transform: scale(1.075);
+}
+.moodBtn:not(:hover) {
+  transition: .25s;
+}
+
+/* Align moods to the right */
+.mood-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moodBtn {
+    margin-left: 10px;
+}
+
+
+input#happy-mood[type=radio] + label {
+    background-image: url("../assets/happy.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#happy-mood[type=radio]:checked + label {
+    background-image:url("../assets/happy.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#neutral-mood[type=radio] + label {
+    background-image:url("../assets/neutral.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#neutral-mood[type=radio]:checked + label {
+    background-image:url("../assets/neutral.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#indecisive-mood[type=radio] + label {
+    background-image:url("../assets/indecisive.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#indecisive-mood[type=radio]:checked + label {
+    background-image:url("../assets/indecisive.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#anxious-mood[type=radio] + label {
+    background-image:url("../assets/anxious.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#anxious-mood[type=radio]:checked + label {
+    background-image:url("../assets/anxious.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#sad-mood[type=radio] + label {
+    background-image:url("../assets/sad.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#sad-mood[type=radio]:checked + label {
+    background-image:url("../assets/sad.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#emotional-mood[type=radio] + label {
+    background-image:url("../assets/emotional.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#emotional-mood[type=radio]:checked + label {
+    background-image:url("../assets/emotional.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#angry-mood[type=radio] + label {
+    background-image:url("../assets/angry.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#angry-mood[type=radio]:checked + label {
+    background-image:url("../assets/angry.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#annoyed-mood[type=radio] + label {
+    background-image:url("../assets/annoyed.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#annoyed-mood[type=radio]:checked + label {
+    background-image:url("../assets/annoyed.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#sick-mood[type=radio] + label {
+    background-image:url("../assets/sick.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#sick-mood[type=radio]:checked + label {
+    background-image:url("../assets/sick.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+input#tired-mood[type=radio] + label {
+    background-image:url("../assets/tired.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+}
+
+input#tired-mood[type=radio]:checked + label {
+    background-image:url("../assets/tired.png");
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0px;
+    border-color: #E3F4F4;
+    border-style: solid;
+}
+
+button {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    background-color: #C4DFDF;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.journal-entry {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-weight:lighter;
+}
+
+.row .col {
+    padding: 0 2rem;
+}
+
+.prevBtns {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
